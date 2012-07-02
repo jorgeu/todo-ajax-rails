@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Notas App</title>
+<%= javascript_include_tag :home %>
+<%= stylesheet_link_tag :home %>
+<%= stylesheet_link_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-lightness/jquery-ui.css'%>
+</head>
+<body>
+
+<div id="init" class="oculto">
+<label for="usuario"/>Usuario:</label>
+<input type="text" name="usuario" id="usuario"/>
+</div>
+
+<div id="nuevo" class="oculto">
+<label for="titulo" class="oculto">Titulo:</label>
+<input type="text" name="titulo" autocomplete="off" 
+       id="titulo" placeholder="Titulo..."/><br/>
+<label for="contenido" class="oculto"/>Contenido:</label>
+<textarea id="contenido" autocomplete="off" 
+       placeholder="Contenido..."></textarea>
+</div>
+
+<div id="cont" class="oculto">
+<h1 id="hh"></h1>
+<ul id="notas"></ul>
+<button onclick="newNota()">Agregar</button>
+<button onclick="delNota()">Eliminar</button>
+<button onclick="logout()">Salir</button>
+</cont>
+
+</body>
+</html>

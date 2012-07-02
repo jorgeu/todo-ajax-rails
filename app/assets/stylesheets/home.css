@@ -1,0 +1,16 @@
+.oculto {
+   display: none;
+}
+
+li a {
+    font-size: 2em;
+}
+
+#titulo, #contenido {
+    width: 300px;
+}
+
+#contenido {
+    height: 200px;
+    margin-top: 20px;
+}
